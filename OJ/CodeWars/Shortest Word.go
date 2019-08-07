@@ -10,5 +10,7 @@ func FindShort(s string) int {
 	 r = l
 	}
  }
+
+
  return r
 }

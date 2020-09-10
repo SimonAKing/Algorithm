@@ -21,7 +21,7 @@ const randomText = (len = 5) => {
  */
 var encode = function (longUrl) {
 	const shortUrl = baseUrl + randomText()
-	store[shortUrl] = longUrl
+	store[shortUrl] = lodisngUrl
 	return shortUrl
 };
 

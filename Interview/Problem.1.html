@@ -1,0 +1,63 @@
+<!-- // 1. 页面内有一个正方形元素，实现对其拖拽和放下，需要考虑窗口的边界情况。 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body,
+			html {
+				padding: 0px;
+				margin: 0px;
+			}
+			#square {
+				position: relative;
+				width: 200px;
+				height: 200px;
+				background-color: #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="square" draggable="true"></div>
+		<script>
+			const square = document.getElementById("square");
+			let dragged = null;
+			const position = {};
+			const size = { width: 200, height: 200 };
+			document.addEventListener(
+				"dragstart",
+				function (event) {
+					dragged = event.target;
+				},
+				false
+			);
+
+			document.addEventListener(
+				"dragover",
+				function (event) {
+					position.x = Math.min(
+						Math.max(event.offsetX - size.width / 2, 0),
+						window.innerWidth - size.width
+					);
+					position.y = Math.min(
+						Math.max(event.offsetY - size.height / 2, 0),
+						window.innerHeight - size.height
+					);
+					event.preventDefault();
+				},
+				false
+			);
+
+			document.addEventListener(
+				"drop",
+				function (event) {
+					event.preventDefault();
+					dragged.style = `top: ${position.y}px; left: ${position.x}px`;
+				},
+				false
+			);
+		</script>
+	</body>
+</html>

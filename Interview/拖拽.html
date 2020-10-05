@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>拖拽</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			#square {
+				width: 100px;
+				height: 100px;
+				background: #ffd39b;
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="square"></div>
+		<script>
+			const square = document.getElementById('square')
+			const squareWidth = square.offsetWidth
+			const squareHeight = square.offsetHeight
+			const clientWidth = document.documentElement.clientWidth //最大宽度
+			const clientHeight = document.documentElement.clientHeight
+
+			let originOffetL = 0
+			let originOffetT = 0
+
+			square.addEventListener('mousedown', (e) => {
+				originOffetL = e.clientX - square.offsetLeft // 鼠标位置和元素偏移差值，为了讲鼠标位置重置为元素0，0位置
+				originOffetT = e.clientY - square.offsetTop
+				document.addEventListener('mousemove', mouseCallback)
+			})
+
+			square.addEventListener('mouseup', (e) => {
+				document.removeEventListener('mousemove', mouseCallback)
+			})
+
+			function mouseCallback(e) {
+        console.log(e.clientX, originOffetL)
+				let currentL = e.clientX - originOffetL //元素移动后的左偏移量
+				let currentT = e.clientY - originOffetT
+				if (currentL + squareWidth > clientWidth) {
+					square.style.left = clientWidth - squareWidth + 'px'
+				} else if (currentL < 0) {
+					//考虑窗口边界
+					square.style.left = 0 + 'px'
+				} else {
+					square.style.left = currentL + 'px'
+				}
+
+				if (currentT + squareHeight > clientHeight) {
+					//考虑窗口边界
+					square.style.top = clientHeight - squareHeight + 'px'
+				} else if (currentT < 0) {
+					//考虑窗口边界
+					square.style.top = 0 + 'px'
+				} else {
+					square.style.top = currentT + 'px'
+				}
+			}
+		</script>
+	</body>
+</html>

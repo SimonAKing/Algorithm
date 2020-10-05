@@ -1,6 +1,6 @@
 const unfold = (func, seed) => {
 	const go = (seed, arr, res = func(seed)) =>
-		res ? go(res[1], [...arr,res[0]]) : arr
+		res ? go(res[1], [...arr, res[0]]) : arr
 	return go(seed, [])
 }
 

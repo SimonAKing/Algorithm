@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				padding: 0px;
+				margin: 0px;
+			}
+			header {
+				position: fixed;
+				top: 0;
+				height: 50px;
+				width: 100%;
+				background-color: #96e3e5;
+				line-height: 50px;
+				text-align: center;
+				z-index: 1;
+			}
+			main {
+				position: relative;
+				top: 60px;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+			}
+
+			main div {
+				background-color: #96e3e5;
+				text-align: center;
+			}
+
+			main .main-content {
+				width: 600px;
+				margin: 0 10px;
+			}
+
+			main .right-panel,
+			main .left-panel {
+				position: relative;
+				width: 300px;
+				height: 100%;
+			}
+
+			.fixed-bottom {
+				position: fixed;
+				bottom: 0;
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>固定在顶部，宽度100%，高度50px</header>
+		<main>
+			<div class="left-panel"><div>Left-panel</div></div>
+			<div class="main-content"><div>Main-content</div></div>
+			<div class="right-panel"><div>Right-panel</div></div>
+		</main>
+		<script>
+			const main = document.getElementsByTagName('main')[0]
+			const leftPanel = document.querySelector('.left-panel div')
+			const mainContent = document.querySelector('.main-content div')
+			const rightPanel = document.querySelector('.right-panel div')
+
+			const mock = (lineCount, lineContent = 'MOCK-DATA') => {
+				return Array.from( { length: lineCount }, (_, idx) => `<p>${lineContent}-${idx + 1}</p>`, ).join('')
+			}
+
+			leftPanel.innerHTML = mock(30)
+			rightPanel.innerHTML = mock(40)
+			mainContent.innerHTML = mock(50)
+
+			const isScrollBottom = (el, offsetTop = 60) => {
+				const clientHeight = el.getBoundingClientRect().height + offsetTop
+				return document.documentElement.scrollTop > clientHeight - window.innerHeight
+			}
+
+			const toggleFixedBottom = (el, className = 'fixed-bottom') => {
+				if (isScrollBottom(el)) {
+					el.classList.add(className)
+				} else {
+					el.classList.remove(className)
+				}
+			}
+
+			document.addEventListener('scroll', () => {
+				toggleFixedBottom(leftPanel)
+				toggleFixedBottom(rightPanel)
+			})
+		</script>
+	</body>
+</html>

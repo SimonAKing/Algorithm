@@ -1,0 +1,3 @@
+const detectCycle = head => {
+
+}

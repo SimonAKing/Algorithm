@@ -27,6 +27,7 @@ function loadImage(el, index) {
 }
 
 function processImages() {
+	if (!images) { return }
 	for (let i = 0; i < images.length; ++i) {
 		if (!hadLoadSymbol[i] && elementHasInViewport(images[i])) {
 			loadImage(images[i], i)
@@ -56,7 +57,5 @@ const throttle = (fn, wait) => {
 	}
 }
 
-if (images && images.length) {
-	processImages()
-	window.addEventListener('scroll', throttle(processImages, 300), false)
-}
+processImages()
+window.addEventListener('scroll', throttle(processImages, 300), false)

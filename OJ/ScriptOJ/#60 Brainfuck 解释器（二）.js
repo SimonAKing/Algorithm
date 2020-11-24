@@ -33,8 +33,8 @@ const brainFuck = (code, input = '') => {
 						}
 						A[I] = input.charCodeAt(J++)
 					} else if (v === '[') {
-						let j = i + 1,
-							t = 1
+						let j = i + 1
+						let t = 1
 						for (; j < code.length; ++j) {
 							if (code[j] === '[') {
 								t++

@@ -2,21 +2,21 @@ const cartesianProductOf = data =>
 	data.length <= 1
 		? Array.from(data[0])
 		: data.reduce(
-				(r, a) =>
-					(k => (r.forEach(x => a.forEach(b => k.push([...x, b]))), k))([]),
-				[[]]
-		  )
+			(r, a) =>
+				(k => (r.forEach(x => a.forEach(b => k.push([...x, b]))), k))([]),
+			[[]]
+		)
 const handleGroup = (index, groupFn, data, fn = groupFn[index]) =>
 	fn
 		? data
-				.reduce(
-					(r, v) =>
-						((k, y = r.find(([f]) => f === k)) => (
-							y ? y[1].push(v) : r.push([k, [v]]), r
-						))(fn(v)),
-					[]
-				)
-				.map(v => ((v[1] = handleGroup(index + 1, groupFn, v[1])), v))
+			.reduce(
+				(r, v) =>
+					((k, y = r.find(([f]) => f === k)) => (
+						y ? y[1].push(v) : r.push([k, [v]]), r
+					))(fn(v)),
+				[]
+			)
+			.map(v => ((v[1] = handleGroup(index + 1, groupFn, v[1])), v))
 		: data
 
 const query = () => {

@@ -15,4 +15,4 @@ const permutate = (n, choices = ['A', 'B', 'C', 'D']) => {
 	return result
 }
 
-console.log(permutate(4))
+console.log(permutate(2))

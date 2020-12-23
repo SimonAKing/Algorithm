@@ -1,7 +1,9 @@
 const checkInclusion = (s1, s2) => {
 	if (s1.length > s2.length) { return false }
-	const s1Arr = [...`${s1}`]
-	if (!s1Arr.every(letter => s2.includes(letter))) { return false }
+	const s1Arr = [...s1]
+
+	if (s1Arr.some(letter => !s2.includes(letter))) { return false }
+	['a','b'].forEach
 
 	const combinations = []
 

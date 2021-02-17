@@ -2,8 +2,7 @@
   "name": "Coding",
   "version": "1.0.0",
   "description": "> 有幸打过竞赛 ，编程思想得以快速养成。",
-	"main": ".eslintrc.js",
-	"type": "module",
+  "main": ".eslintrc.js",
   "dependencies": {
     "axios": "^0.21.1",
     "babel-eslint": "^10.1.0",

@@ -1,36 +1,51 @@
-class RequestLimit {
-	constructor(limit = 2) {
-		this.limit = Number.parseInt(limit)
-		this.blockQueue = []
-		this.requestCount = 0
-	}
+const getRequestWithLimit = limit => {
+	let count = 0
+	const blockQueue = []
 
-	/**
-	 * 请求
-	 * @param {*} req
-	 */
-	async request(req) { // {2}
-		if (!req) {
-			throw new Error('req is required.')
+	return async request => {
+		count++
+		if (count > limit) {
+			await new Promise(resolve => blockQueue.push(resolve))
 		}
-		if (Object.prototype.toString.call(req) !== '[object Function]') {
-			throw new Error('Req must be a function.')
-		}
-		if (this.requestCount >= this.limit) { // {3}
-			await new Promise(resolve => this.blockQueue.push(resolve)) // 阻塞队列增加一个 Pending 状态的 Promise
-		}
-
-		this.requestCount++ // {5}
 		try {
-			return await req()
+			return await request()
 		} catch (error) {
 			return Promise.reject(error)
 		} finally {
-			this.requestCount--
-			if (this.blockQueue.length) { // 每完成一个就从阻塞队列里剔除一个
-				this.blockQueue[0]() // 将最先进入阻塞队列的 Promise 从 Pending 变为 Fulfilled
-				this.blockQueue.shift()
-			}
+			count--
+			blockQueue.length && blockQueue.shift()()
 		}
 	}
 }
+
+const sleepByAsync = ms => new Promise(r => { setTimeout(r, ms) })
+
+const fetch1 = async () => {
+	console.log('fetch1 start')
+	await sleepByAsync(1000)
+	console.log('fetch1 end')
+}
+const fetch2 = async () => {
+	console.log('fetch2 start')
+	await sleepByAsync(2000)
+	console.log('fetch2 end')
+}
+const fetch3 = async () => {
+	console.log('fetch3 start')
+	await sleepByAsync(3000)
+	console.log('fetch3 end')
+}
+
+const requestWithLimit = getRequestWithLimit(2)
+
+requestWithLimit(fetch1)
+requestWithLimit(fetch2)
+requestWithLimit(fetch3)
+
+// 打印结果如下:
+// fetch1 start
+// fetch2 start
+// fetch1 end
+// fetch3 start
+// fetch2 end
+// fetch3 end

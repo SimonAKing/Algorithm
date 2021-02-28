@@ -10,15 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7f4c94e-4e62-47a2-94b6-5378531392b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/20. 有效的括号.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/566. 重塑矩阵.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/566. 重塑矩阵.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/63. 不同路径 II.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/50. Pow(x, n).ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/70. 爬楼梯.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +158,8 @@
       <workItem from="1564190013685" duration="352000" />
       <workItem from="1564190429980" duration="51000" />
       <workItem from="1564190566698" duration="82000" />
-      <workItem from="1613532869081" duration="2266000" />
+      <workItem from="1613532869081" duration="2892000" />
+      <workItem from="1614423017119" duration="2620000" />
     </task>
     <servers />
   </component>

@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "> 有幸打过竞赛 ，编程思想得以快速养成。",
   "main": ".eslintrc.js",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.8.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,8 +13,26 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "script": {
+    "test": "cross-env TS_NODE_PROJECT=\"tsconfig.test.json\" mocha OJ/**/*.spec.ts"
+  },
   "bugs": {
     "url": "https://github.com/Tomotoes/Algorithm/issues"
   },
-  "homepage": "https://github.com/Tomotoes/Algorithm#readme"
+  "homepage": "https://github.com/Tomotoes/Algorithm#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "axios": "^0.21.1",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.3.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.8.1",
+    "mocha": "^8.3.2"
+  },
+  "dependencies": {
+    "@types/events": "^3.0.0",
+    "events": "^3.3.0",
+    "ts-node": "^9.1.1"
+  }
 }

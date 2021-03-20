@@ -3,5 +3,8 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/OJ/CodeWars/tsconfig.json" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="11.0.3" project-jdk-type="JavaSDK" />
 </project>

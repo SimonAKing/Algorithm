@@ -10,9 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7f4c94e-4e62-47a2-94b6-5378531392b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/50. Pow(x, n).ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/70. 爬楼梯.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ/CodeWars/Reactive programming: #1 Create function.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ/CodeWars/Reactive programming: #2 Basic observables creation .ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ/CodeWars/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/CodeWars/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/CodeWars/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,25 +92,28 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/OJ/LeetCode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/OJ/CodeWars" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/OJ/CodeWars" />
       <recent name="$PROJECT_DIR$/OJ/LeetCode" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Mocha.create tests">
     <configuration name="go build binarySearch.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -138,6 +148,26 @@
       <pattern value="^TestBinarySearch$" />
       <method v="2" />
     </configuration>
+    <configuration name="create tests" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/OJ/CodeWars/Reactive programming: #1 Create function.test.ts</test-file>
+      <test-names>
+        <name value="create tests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Mocha.create tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -160,6 +190,8 @@
       <workItem from="1564190566698" duration="82000" />
       <workItem from="1613532869081" duration="2892000" />
       <workItem from="1614423017119" duration="2620000" />
+      <workItem from="1615108924197" duration="414000" />
+      <workItem from="1616225245677" duration="7865000" />
     </task>
     <servers />
   </component>

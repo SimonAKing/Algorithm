@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated />
   </component>
@@ -10,10 +13,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7f4c94e-4e62-47a2-94b6-5378531392b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TEST/slice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEST/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEST/walkDOM.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/TwoSum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/TwoSum_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ/LeetCode/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algorithm.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/a.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node/b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/1. Two Sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/1. Two Sum.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/101. Symmetric Tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/101. Symmetric Tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/1021. Remove Outermost Parentheses.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/1021. Remove Outermost Parentheses.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/1108. Defanging an IP Address.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/1108. Defanging an IP Address.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/1281. Subtract the Product and Sum of Digits of an Integer.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/1281. Subtract the Product and Sum of Digits of an Integer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/1295. Find Numbers with Even Number of Digits.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/1295. Find Numbers with Even Number of Digits.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/1302. Deepest Leaves Sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/1302. Deepest Leaves Sum.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/1313. Decompress Run-Length Encoded List.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/1313. Decompress Run-Length Encoded List.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/1315. Sum of Nodes with Even-Valued Grandparent.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/1315. Sum of Nodes with Even-Valued Grandparent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/2. Add Two Numbers.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/2. Add Two Numbers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/203. Remove Linked List Elements.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/203. Remove Linked List Elements.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/226. Invert Binary Tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/226. Invert Binary Tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/237. Delete Node in a Linked List.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/237. Delete Node in a Linked List.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/3. Longest Substring Without Repeating Characters.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/3. Longest Substring Without Repeating Characters.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/392. Is Subsequence.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/392. Is Subsequence.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/628. Maximum Product of Three Numbers.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/628. Maximum Product of Three Numbers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/771. Jewels and Stones.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/771. Jewels and Stones.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/807. Max Increase to Keep City Skyline.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/807. Max Increase to Keep City Skyline.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/938. Range Sum of BST.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/938. Range Sum of BST.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ/LeetCode/977. Squares of a Sorted Array.go" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/LeetCode/977. Squares of a Sorted Array.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +64,19 @@
       <replace>float64</replace>
     </replaceStrings>
   </component>
-  <component name="GOROOT" path="C:\Go" />
+  <component name="GOROOT" url="file://$USER_HOME$/.gvm/gos/go1.23.3" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
@@ -73,73 +105,70 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
     <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="editor.config.ad.shown" value="true" />
-    <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/OJ/CodeWars" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
-    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build hello_world.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestBinarySearch in binarySearch_test.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSum in hello_world_test.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestTwoSum in TwoSum_test.go.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bytedance/Workspace/personal-codebases/Algorithm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/OJ/CodeWars" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/OJ/LeetCode" />
+      <recent name="$PROJECT_DIR$/OJ/CodeWars" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.create tests">
-    <configuration name="go build binarySearch.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestSum in hello_world_test.go">
+    <configuration name="go build hello_world.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
-      <working_directory value="$PROJECT_DIR$/" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/OJ/Other/binarySearch.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build quickSort.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/OJ/Other/quickSort.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build solveRPN.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/OJ/Other/solveRPN.go" />
-      <directory value="$PROJECT_DIR$/" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/hello_world.go" />
       <method v="2" />
     </configuration>
     <configuration name="TestBinarySearch in binarySearch_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <working_directory value="$PROJECT_DIR$/OJ/Other" />
-      <framework value="gotest" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/OJ/Other/binarySearch_test.go" />
+      <framework value="gotest" />
       <pattern value="^TestBinarySearch$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSum in hello_world_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/hello_world_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestSum\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTwoSum in TwoSum_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <working_directory value="$PROJECT_DIR$/OJ/LeetCode" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/OJ/LeetCode/TwoSum_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestTwoSum\E$" />
       <method v="2" />
     </configuration>
     <configuration name="create tests" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -159,9 +188,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.create tests" />
+        <item itemvalue="Go Test.TestTwoSum in TwoSum_test.go" />
+        <item itemvalue="Go Test.TestSum in hello_world_test.go" />
+        <item itemvalue="Go Test.TestBinarySearch in binarySearch_test.go" />
+        <item itemvalue="Go Build.go build hello_world.go" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-5df93f7ad4aa-df9ad98b711f-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-242.23339.24" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -237,16 +276,10 @@
       </list>
     </option>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="mocha-javascript-test-runner" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -261,12 +294,24 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/node_modules/tree-node-cli" />
     </ignored-roots>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

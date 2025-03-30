@@ -1,3 +1,5 @@
+package leetcode
+
 import "sort"
 
 func sortedSquares(A []int) []int {
@@ -7,4 +9,3 @@ func sortedSquares(A []int) []int {
 	sort.Ints(A)
 	return A
 }
-

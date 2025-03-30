@@ -1,6 +1,6 @@
 package leetcode
 
-func twoSum(nums []int, target int) []int {
+func TwoSum(nums []int, target int) []int {
 	length := len(nums)
 	hash := make(map[int]int, length)
 

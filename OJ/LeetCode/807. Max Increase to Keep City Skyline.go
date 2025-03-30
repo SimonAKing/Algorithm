@@ -1,4 +1,4 @@
-package main
+package leetcode
 
 func maxIncreaseKeepingSkyline(grid [][]int) int {
 	verticalH := len(grid)

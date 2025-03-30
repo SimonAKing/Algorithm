@@ -1,18 +1,12 @@
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+package leetcode
+
 func rangeSumBST(root *TreeNode, L int, R int) int {
 	if root == nil {
 		return 0
 	}
 
 	sum := 0
-	
+
 	switch {
 	case root.Val < L:
 		sum = rangeSumBST(root.Right, L, R)
@@ -25,4 +19,3 @@ func rangeSumBST(root *TreeNode, L int, R int) int {
 	}
 	return sum
 }
-

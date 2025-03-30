@@ -2,15 +2,15 @@ package kata
 
 import "math"
 
-var Cache = map[uint64]uint64{0: 0, 1: 1}
+var CacheV2 = map[uint64]uint64{0: 0, 1: 1}
 
 func Fib(n uint64) uint64 {
-	v, had := Cache[n]
+	v, had := CacheV2[n]
 	if had {
 		return v
 	}
 	r := Fib(n-1) + Fib(n-2)
-	Cache[n] = r
+	CacheV2[n] = r
 	return r
 }
 

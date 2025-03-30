@@ -1,25 +1,20 @@
-package main
+package leetcode
 
 func removeOuterParentheses(S string) (s string) {
 	var v int
-	for _,c := range S {
+	for _, c := range S {
 		if c == '(' {
 			if v > 0 {
-				s+=string(c)
+				s += string(c)
 			}
 			v++
-		}else{
+		} else {
 			v--
 			if v > 0 {
-				s+=string(c)
+				s += string(c)
 			}
 		}
 	}
 
 	return
 }
-
-
-
-
-
